@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片鉴赏</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        .top {
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            background: url("images/1.jpeg");
+            z-index: 100;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-left: 10%;
+            position: absolute;
+        }
+
+        .t-nav {
+            float: left;
+            margin-left: 17%;
+        }
+
+        .t-nav li {
+            width: 180px;
+            height: 60px;
+            float: left;
+        }
+
+        .t-nav a {
+            line-height: 70px;
+            color: #ecf0f1;
+        }
+
+        .t-nav li :hover {
+            color: #eaa974;
+        }
+
+        .main {
+            left: 10%;
+            top: 10%;
+            background: white;
+            height: 940px;
+            width: 80%;
+            position: absolute;
+        }
+
+        .icon {
+            width: 20%;
+            height: 6%;
+            text-align: center;
+            font-size: 35px;
+            color: #355c7d;
+            line-height: 70px;
+        }
+
+        .icon-1 {
+            text-align: center;
+            font-size: 30px;
+            color: #6c5b7b;
+        }
+
+        .mod {
+            margin: 2% auto;
+            width: 80%;
+            height: 55%;
+        }
+
+       .mod li {
+            padding: 1%;
+            float: left;
+            list-style: none
+        }
+
+        .mod li img {
+            display: block;
+            width: 180px;
+            height: 240px;
+            padding: 4px;
+            background-color: #FFF;
+            box-shadow: 0px 0px 18px rgba(0, 0, 0, .4);
+            -webkit-transition: all ease .3s;
+            transition: all ease .3s
+        }
+
+        .mod li img:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            box-shadow: 0px 0px 18px rgba(0, 0, 0, .5);
+        }
+
+        .icon-2 {
+            text-align: center;
+            font-size: 30px;
+            color: #6c5b7b;
+        }
+
+        .mod-1 {
+            margin: 1% auto;
+            width: 80%;
+            height: 20%;
+        }
+        .mod-1 li{
+            padding: 3%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<!--背景图-->
+<img src="images/1.jpeg" style="z-index: -1;position: fixed;">
+<!--导航栏-->
+<div class="top">
+    <h1><img src="images/004.png" width="80" height="80"></h1>
+    <ul class="t-nav">
+        <li><a href="index.html">游戏资讯</a></li>
+        <li><a href="游戏攻略.html">游戏攻略</a></li>
+        <li><a href="碑谷秘密.html">碑谷秘密</a></li>
+        <li><a href="图片鉴赏.html">图片鉴赏</a></li>
+        <li><a href="积分站.html">积分站</a></li>
+    </ul>
+</div>
+<!--主内容-->
+<div class="main">
+    <!--小标题-->
+    <div class="icon">
+        <span>视觉盛宴</span>
+    </div>
+    <div class="icon-1">
+        <span>|被遗忘的海岸|</span>
+    </div>
+    <!--图片-->
+    <div class="mod">
+        <ul>
+            <li><a href=""><img src="images/1.深坑.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/2.毒蛇之湖.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/3.小偷.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/4.静谧庭院.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/5.迷失瀑布.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/6.幻象城堡.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/7.密牢.jpg" width="180" height="240"></a></li>
+            <li><a href=""><img src="images/8.夜曲.jpg" width="180" height="240"></a></li>
+        </ul>
+    </div><br>
+    <!--小标题-->
+    <div class="icon-2">
+        <span>|其他|</span>
+    </div>
+    <!--图片-->
+    <div class="mod-1">
+        <ul>
+            <li><a href=""><img src="images/小1.jpg"></a></li>
+            <li><a href=""><img src="images/小2.jpg"></a></li>
+            <li><a href=""><img src="images/小3.jpg"></a></li>
+            <li><a href=""><img src="images/小4.jpg"></a></li>
+            <li><a href=""><img src="images/小5.jpg"></a></li>
+            <li><a href=""><img src="images/小6.png"></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>碑谷秘密</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        .top {
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            background: url("images/1.jpeg");
+            z-index: 100;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-left: 10%;
+            position: absolute;
+        }
+
+        .t-nav {
+            float: left;
+            margin-left: 17%;
+        }
+
+        .t-nav li {
+            width: 180px;
+            height: 60px;
+            float: left;
+        }
+
+        .t-nav a {
+            line-height: 70px;
+            color: #ecf0f1;
+        }
+
+        .t-nav li :hover {
+            color: #eaa974;
+        }
+
+        .main {
+            left: 10%;
+            top: 10%;
+            background: white;
+            height: 940px;
+            width: 80%;
+            position: absolute;
+        }
+
+        .aside {
+            margin: 0;
+            width: 22%;
+            height: 100%;
+            float: right;
+            border-left: 1px solid #95a5a6;
+        }
+
+        .login {
+            height: 25%;
+            background: #95a5a6;
+            text-align: center;
+        }
+
+        .login input[type="text"], .login input[type="password"] {
+            margin: 10px auto;
+            display: block;
+            padding: 8px 10px;
+        }
+
+        p {
+            color: dimgray;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline;
+        }
+
+        p:hover {
+            color: gray;
+        }
+
+        .login input[type="submit"] {
+            background: none;
+            padding: 8px 40px;
+            cursor: pointer;
+            color: white;
+            border: 2px solid #bdc3c7;
+            border-radius: 10px;
+            outline: none;
+        }
+
+        .login input[type="submit"]:hover {
+            border: 2px solid dimgray;
+        }
+
+        .b-aside {
+            margin: 1%;
+            height: 70%;
+            text-align: center;
+        }
+
+        .mod {
+            margin: 10px;
+            width: 76%;
+            height: 98%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<!--背景图-->
+<img src="images/1.jpeg" style="z-index: -1;position: fixed;">
+<!--导航栏-->
+<div class="top">
+    <h1><img src="images/004.png" width="80" height="80"></h1>
+    <ul class="t-nav">
+        <li><a href="index.html">游戏资讯</a></li>
+        <li><a href="游戏攻略.html">游戏攻略</a></li>
+        <li><a href="碑谷秘密.html">碑谷秘密</a></li>
+        <li><a href="图片鉴赏.html">图片鉴赏</a></li>
+        <li><a href="积分站.html">积分站</a></li>
+    </ul>
+</div>
+<!--内容盒子-->
+<div class="main">
+    <!--页面左边-->
+    <div class="aside">
+        <!--登录-->
+        <form class="login" method="post">
+            <span style="font-size: 18px">登录</span><br>
+            <input type="text" name="useName" placeholder="账号">
+            <input type="password" name="pas" placeholder="密码">
+            <p style="float: left">忘记密码</p>
+            <p style="float: right" onclick="return jump()">账号注册</p><br><br>
+            <input type="submit" name="btn" value="登录">
+        </form>
+        <!--相关其他游戏-->
+        <div class="b-aside">
+            <span style="font-size: 20px ;">相关游戏</span><br><br>
+            <a href=""><img src="images/纸境.jpg" width="160" height="110"></a><br>
+            <a href="">纸境</a><br><br>
+            <a href=""><img src="images/花语月.jpg" width="160" height="110"></a><br>
+            <a href="">花语月</a><br><br>
+            <a href=""><img src="images/修剪艺术.jpg" width="160" height="110"></a><br>
+            <a href="">修剪艺术</a><br><br>
+            <a href=""><img src="images/幽灵记忆.jpg" width="160" height="110"></a><br>
+            <a href="">幽灵记忆</a>
+        </div>
+    </div>
+    <!--页面右边-->
+    <div class="mod">
+        <h2 style="text-align: center">90%的人都不知道《纪念碑谷》4大秘密，你知道哪一个？</h2>
+        <h3>第一大秘密：纪念碑谷的起源</h3>
+        每个神作的诞生，背后都少不了故事，《纪念碑谷》当然也不例外，1代首席设计师Ken Wong从荷兰版画大师埃舍尔
+        作品中获取灵感，于是制作团队借鉴了M.C.埃舍尔的风格，设计了许多“不可能的图形”。
+        <h3>第二大秘密：纪念碑谷的背景故事</h3>
+        《纪念碑谷》讲述了艾达公主，因为好奇盗走神圣几何导致王国灭亡，随后走上归还神物寻求救赎的旅程。<br>
+        《纪念碑谷2》则讲述了关于成长的故事，母亲萝尔学会了真爱是放手和使命的传承，小女孩则领悟了成长和独立的真谛。<br>
+        但无论是救赎还是成长，《纪念碑谷》都一直延续着寻找自我的故事。
+        <h3>第三大秘密：角色背景故事</h3>
+        【乌鸦人】艾达拿走了几何体使得国家能源枯竭，百姓变成了黑乌鸦，百姓们一开始也是有怒气的，
+        但随着艾达逐渐归还几何体，百姓们也选择了原谅。<br>
+        【图腾】图腾原是邻国来提亲的小王子，对艾达一见钟情，当艾达闯下弥天大祸后，化身图腾帮助艾达完成救赎。<br>
+        【暗夜】暗夜是王国的巫师，用法术保持住自身灵魂，对艾达有些许埋怨，但还是指导她归还几何体。
+        <h3>第四大秘密：建筑原型</h3>
+        《纪念碑谷2》延续了前作的视觉错位艺术，一个个真实又虚幻的建筑，无不挑逗着玩家的视觉神经。
+        而许多在游戏中出现的建筑，在现实中更是有其原型。<br>
+        <img src="images/红墙.jpg " width="160" height="100">
+        <img src="images/红墙1.jpg " width="160" height="100">
+        西班牙阿利坎特：红墙
+        游戏章节：《纪念碑谷2》第三关-绿洲<br>
+        <img src="images/蓝色清真寺.jpg " width="160" height="100">
+        <img src="images/蓝色清真寺1.jpg" width="160" height="100">
+        土耳其伊斯坦布尔：蓝色清真寺
+        游戏章节：《纪念碑谷1》第八关<br>
+        <img src="images/水宫.jpg " width="160" height="100">
+        <img src="images/水宫1.jpg " width="160" height="100">
+        意大利西西里巴勒：莫圣若望隐修院
+        游戏章节:《记念碑谷2》第四关<br><br><br>
+        <span style=" margin:100px;color: #30336b">各位小伙们还知道哪些《纪念碑谷》不为人知的秘密，不妨登录留言与我们一起讨论哦~</span>
+    </div>
+</div>
+<
+<script type="text/javascript">
+    function jump() {
+        window.open('积分站.html');
+
+    }
+</script>
+</body>
+</html>

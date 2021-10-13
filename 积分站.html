@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分站</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        .top {
+            position: fixed;
+            width: 100%;
+            height: 10%;
+            background: url("images/1.jpeg");
+            z-index: 100;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-left: 10%;
+            position: absolute;
+        }
+
+        .t-nav {
+            float: left;
+            margin-left: 17%;
+        }
+
+        .t-nav li {
+            width: 180px;
+            height: 60px;
+            float: left;
+        }
+
+        .t-nav a {
+            line-height: 70px;
+            color: #ecf0f1;
+        }
+
+        .t-nav li :hover {
+            color: #eaa974;
+        }
+
+        .main {
+            left: 10%;
+            top: 10%;
+            background-image: url("images/0011.png");
+            height: 650px;
+            width: 80%;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .mod {
+            margin-top: 10%;
+            width: 15%;
+            height: 60%;
+            float: left;
+        }
+
+        .mod li {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background: #ffd3b5;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+        }
+
+        .mod li :hover {
+            font-size: 20px;
+        }
+
+        .mod li a {
+            color: #335;
+        }
+
+        .mod-1 {
+            margin: 1%;
+            width: 4%;
+            height: 22%;
+            float: right;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #dcedc2;
+            color: #a8e6ce;
+        }
+
+        .mod-2 {
+            margin: 20% 5%;
+            width: 40%;
+            height: 30%;
+            float: left;
+        }
+
+        .mod-2 input[type="text"], .mod-2 input[type="password"] {
+            margin: 10px auto;
+            padding: 10px 15px;
+        }
+
+        .mod-2 input[type="submit"] {
+            margin: 10px 110px;
+            padding: 6px 20px;
+            background: #a8e6ce;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+<!--背景图-->
+<img src="images/1.jpeg" style="z-index: -1;position: fixed;">
+<!--导航栏-->
+<div class="top">
+    <h1><img src="images/004.png" width="80" height="80"></h1>
+    <ul class="t-nav">
+        <li><a href="index.html">游戏资讯</a></li>
+        <li><a href="游戏攻略.html">游戏攻略</a></li>
+        <li><a href="碑谷秘密.html">碑谷秘密</a></li>
+        <li><a href="图片鉴赏.html">图片鉴赏</a></li>
+        <li><a href="积分站.html">积分站</a></li>
+    </ul>
+</div>
+<!--主内容-->
+<div class="main">
+    <!--左侧边-->
+    <div class="mod">
+        <ul>
+            <li><a href="" onclick="return jump()">请登录</a></li>
+            <li><a href="" onclick="alert('请登录')">积分领取</a></li>
+            <li><a href="" onclick="alert('请登录')">礼品中心</a></li>
+        </ul>
+    </div>
+    <a href="" class="mod-1" onclick="alert('请登录')">每日一签</a>
+    <!--登录界面-->
+    <div class="mod-2">
+        <form name="form1" method="post" action="">
+            <table>
+                <label>用户名：</label>
+                <input type="text" name="userName" value="" placeholder="请输入账号">
+            </table>
+            <table>
+                <labe2> 密&nbsp; &nbsp;码：</labe2>
+                <input type="password" name="pas" placeholder="请输入密码">
+            </table>
+            <table>
+                <labe3>密&nbsp; &nbsp;码：</labe3>
+                <input type="password" name="pas1" placeholder="请确认密码">
+            </table>
+            <table>
+                <labe4> 性&nbsp; &nbsp;别：</labe4>
+                <input type="radio" value="1" name="sex">男
+                <input type="radio" name="sex" value="2">女
+            </table>
+            <table>
+                <input type="submit" name="button" value="注册">
+            </table>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function jump() {
+        window.open('碑谷秘密.html');
+    }
+</script>
+</body>
+</html>
